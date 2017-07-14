@@ -1,0 +1,22 @@
+{
+    "name": "tractorcow/awssstore",
+    "description": "s3 adapter for silverstripe",
+    "type": "silverstripe-module",
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "Damian Mooyman",
+            "email": "damian@silverstripe.com"
+        }
+    ],
+    "require": {
+        "silverstripe/framework": "^4.0",
+        "league/flysystem-aws-s3-v3": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "TractorCow\\AWSStore\\": "src/"
+        }
+    },
+    "minimum-stability": "dev"
+}

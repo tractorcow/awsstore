@@ -1,0 +1,14 @@
+---
+Name: asssets
+After:
+  - '#assetsflysystem'
+---
+SilverStripe\Core\Injector\Injector:
+  Aws\S3\S3Client:
+    factory: TractorCow\AWSSstore\S3ClientFactory
+  League\Flysystem\AdapterInterface.s3:
+    class: TractorCow\AWSSstore\Adapter
+    constructor:
+      s3client: %$Aws\S3\S3Client
+
+## TODO: Config for TractorCow\AWSStore\Store
